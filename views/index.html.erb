@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> RoboStar </title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <script src="scripts/placement.js"></script>
+    <script src="scripts/lyric_scraper.js"></script>
+    <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+  </head>
+  <body>
+    <div id="formContainer">
+      <input id="title" type="text" name="title" placeholder="Title">
+      <input id="artist" type="text" name="artist" placeholder="Artist">
+      <input id="search" type="submit" value="Search" onclick="placeText(), robotSing(), request()">
+    </div>
+    <div id="player">
+      <a href="javascript:void(0)" onclick="playRobot()"><img src="images/play.png" class="button" alt="Play" id="play"/></a>
+      <a href="javascript:void(0)" onclick="pauseRobot()"><img src="images/pause.png" class="button" alt="Pause" id="pause"/></a>
+      <p id="robostarSings">RoboStar Sings: <span id="playingTitle"></span></p>
+    </div>
+    <div id="lyricsContainer">
+      <h1 id="songTitle"></h1>
+      <h2 id="songArtist"></h2>
+      <p id="lyrics"></p>
+    </div>
+  </body>
+</html>
