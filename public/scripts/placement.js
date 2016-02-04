@@ -6,9 +6,8 @@ placeText = function() {
   document.getElementById('playingTitle').innerHTML = title;
 }
 
-var lyrics = "Baby you know that I miss you I wanna get with you tonight but I cannot babygirl And that's the issue See you when I get home"
-
 robotSing = function() {
+  var lyrics = document.getElementById('lyrics').innerHTML;
   responsiveVoice.speak(lyrics);
   document.getElementById('play').style.display = "none";
   document.getElementById('pause').style.display = "inline-block";
