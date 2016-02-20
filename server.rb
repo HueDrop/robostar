@@ -37,7 +37,7 @@ post "/search" do
     $post_lyrics = a.text
     $lyrics.push(a.text)
     $lyrics = $lyrics.to_s
-    $final_lyrics = $lyrics.gsub! '\n', '</br>'
+    $final_lyrics = $lyrics.gsub! '\n', ' '
     puts $lyrics
   end
   redirect to '/search'
